@@ -1,5 +1,5 @@
 {
-	"name": "weblate-discord-webhook",
+	"name": "weblate-to-discord",
 	"private": true,
 	"type": "module",
 	"scripts": {
