@@ -1,0 +1,26 @@
+{
+	"name": "weblate-discord-webhook",
+	"main": "src/index.js",
+	"compatibility_date": "2026-11-25",
+	"workers_dev": true,
+	"durable_objects": {
+		"bindings": [
+			{
+				"name": "STRING_EVENT_BATCHER",
+				"class_name": "StringEventBatcher"
+			}
+		]
+	},
+	"migrations": [
+		{
+			"tag": "v1",
+			"new_sqlite_classes": ["StringEventBatcher"]
+		}
+	],
+	"observability": {
+		"logs": {
+			"enabled": true,
+			"invocation_logs": true
+		}
+	}
+}
